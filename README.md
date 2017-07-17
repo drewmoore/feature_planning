@@ -41,6 +41,27 @@ Twitter account information is stored on the user's db record:
 - isomorphic fetch
 
 ### Personnel
+- Likely a two-person job: one frontend and one backend.
+- If I were working on it, I would likely work on the tasks of designing the React container/component, making and receiving the API request and results, and testing this frontend feature. My reasoning is just that I have less professional experience in this area and therefore wish to build on these skills.
+
+### Tasks:
+  - Frontend (~= 8 hours):
+    - Implement container/component for rendering of suggestions, empty at first.
+    - Implement twitter button that successfully authorizes Spoonflower to interact with user's Twitter account.
+    - Implement sending of user token to server for saving to user record.
+    - Implement container's fetching of results.
+    - Implement reducer's transferring results to app state.
+    - Rendering results
+    - Tests.
+  - Backend (~= 8 hours):
+    - Receive and store Twitter user token for accessing account.
+    - Implement endpoint for suggestions:
+      - Fetch user's Tweets
+      - Reduce tweets to tags
+      - Query design_tags.
+      - Retrieve the designs.
+      - Respond with designs.
+      - Test backend features.
 
 ### Potential Challenges
 - Feature efficacy
